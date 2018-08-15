@@ -10,7 +10,7 @@ namespace Exercise2A_AverageNonSpecificNumberOfScores
     {
         static void Main(string[] args)
         {
-
+            //Initilizes user input of grade scores as long as the numbers are between 0 and 100
             double n = 0;
             double sum = 0;
             string input = null;
@@ -33,7 +33,7 @@ namespace Exercise2A_AverageNonSpecificNumberOfScores
                 }
             }
 
-            //Getting LetterGrade based on 'n'
+            //Getting LetterGrade based on 'average'
             double average = sum / n;
             string letterGrade;
 
@@ -62,7 +62,7 @@ namespace Exercise2A_AverageNonSpecificNumberOfScores
                 letterGrade = "None";
             }
 
-
+            //Prints scores and grade to console
             Console.WriteLine("Your test score average is: {0}%, with a grade score of: {1}", average, letterGrade);
             Console.ReadLine();
         }

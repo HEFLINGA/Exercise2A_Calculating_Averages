@@ -141,23 +141,23 @@ namespace Exercise2A_AverageTenScores
 
             //Getting LetterGrade based on 'sum'
 
-            if (sum > 90)
+            if (sum >= 90)
             {
                 letterGrade = "A";
             }
-            else if ((sum < 89.9) && (sum > 80.0))
+            else if ((sum <= 89.9) && (sum >= 80.0))
             {
                 letterGrade = "B";
             }
-            else if ((sum < 79.9) && (sum > 70))
+            else if ((sum <= 79.9) && (sum >= 70))
             {
                 letterGrade = "C";
             }
-            else if ((sum < 69.9) && (sum > 60))
+            else if ((sum <= 69.9) && (sum >= 60))
             {
                 letterGrade = "D";
             }
-            else if ((sum < 59.9))
+            else if ((sum <= 59.9))
             {
                 letterGrade = "F";
             }
@@ -168,6 +168,7 @@ namespace Exercise2A_AverageTenScores
 
             //Report the grade to the user
             Console.WriteLine("Your Sum is: {0}%. Your letter grade is: {1}", sum, letterGrade);
+            Console.ReadLine();
         }
     }
 }

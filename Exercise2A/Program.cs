@@ -137,7 +137,7 @@ namespace Exercise2A
                 + number9 
                 + number10);
 
+            Console.ReadLine();
         }
-
     }
 }

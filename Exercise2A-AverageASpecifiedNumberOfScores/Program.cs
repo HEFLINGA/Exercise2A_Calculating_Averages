@@ -9,18 +9,23 @@ namespace Exercise2A_AverageASpecifiedNumberOfScores
     class Program
     {
         static void Main(string[] args)
-        {                
-
-            double n = 0;
-            double sum = 0;
+        {
+            //Initilizes user input of grade scores as long as the numbers are between 0 and 100
+            double total = 0.0;
+            double sum = 0.0;
+            double tests = 0.0;
             string input = null;
-            while (input != "end")
+
+            Console.WriteLine("Please enter how many test score you would like to input: ");
+            total = Convert.ToDouble(Console.ReadLine());
+
+            while (tests != total)
             {
-                Console.Write("Please input a test score! (type \"end\" to finish and get scores and grades!): ");
+                Console.Write("Enter test score: ");
                 input = Console.ReadLine();
-                double num = 0;
+                double num = 0.0;
                 if (double.TryParse(input, out num))
-                {
+                {                
                     if ((num < 0) || (num > 100))
                     {
                         Console.WriteLine("Please enter numbers between 0 and 100");
@@ -28,13 +33,13 @@ namespace Exercise2A_AverageASpecifiedNumberOfScores
                     else
                     {
                         sum = sum + num;
-                        n++;
+                        tests++;
                     }
                 }
             }
 
-            //Getting LetterGrade based on 'n'
-            double average = sum / n;
+            //Getting LetterGrade based on 'average'
+            double average = sum / total;
             string letterGrade;
 
             if (average >= 90)
@@ -62,13 +67,9 @@ namespace Exercise2A_AverageASpecifiedNumberOfScores
                 letterGrade = "None";
             }
 
-
+            //Prints scores and grade to console
             Console.WriteLine("Your test score average is: {0}%, with a grade score of: {1}", average, letterGrade);
             Console.ReadLine();
-
-
-
-
-        }
+        }        
     }
 }
