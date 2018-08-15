@@ -4,12 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Exercise2A_AverageASpecifiedNumberOfScores
+namespace Exercise2A_AverageNonSpecificNumberOfScores
 {
     class Program
     {
         static void Main(string[] args)
-        {                
+        {
 
             double n = 0;
             double sum = 0;
@@ -65,10 +65,6 @@ namespace Exercise2A_AverageASpecifiedNumberOfScores
 
             Console.WriteLine("Your test score average is: {0}%, with a grade score of: {1}", average, letterGrade);
             Console.ReadLine();
-
-
-
-
         }
     }
 }

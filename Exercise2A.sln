@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2A-AverageTenScores
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2A-AverageASpecifiedNumberOfScores", "Exercise2A-AverageASpecifiedNumberOfScores\Exercise2A-AverageASpecifiedNumberOfScores.csproj", "{B19994EF-AE51-403B-B46B-A1A250A0249E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Exercise2A-AverageNonSpecificNumberOfScores", "Exercise2A-AverageNonSpecificNumberOfScores\Exercise2A-AverageNonSpecificNumberOfScores.csproj", "{966806C7-A7C8-451A-B0B9-2EA708EC5CD1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{B19994EF-AE51-403B-B46B-A1A250A0249E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B19994EF-AE51-403B-B46B-A1A250A0249E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B19994EF-AE51-403B-B46B-A1A250A0249E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{966806C7-A7C8-451A-B0B9-2EA708EC5CD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{966806C7-A7C8-451A-B0B9-2EA708EC5CD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{966806C7-A7C8-451A-B0B9-2EA708EC5CD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{966806C7-A7C8-451A-B0B9-2EA708EC5CD1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
